@@ -3,28 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>Portfolio</title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        
     </head>
 <body>
     <a name="TopOFThePage"></a>
     <!--navigation barr-->
     <header>
         <nav>
+            
+            <div class="logo">
+                <img src="./assets/images.jpeg"  alt="logo"> 
+            </div>
+            <div class="menu"> 
+                <a href="#home">home</a>
+                <a href="#about">about</a>
+                <a href="#work">work</a>
+                <a href="#resume">resume</a>
+                <a href="#contact">contact</a>
+            </div>
+        
           
-            <img src="./assets/images.jpeg"  alt="logo" width="150px">  
-            <a href="#home">home</a>
-            <a href="#about">about</a>
-            <a href="#work">work</a>
-            <a href="#resume">resume</a>
-            <a href="#contact">contact</a>
-            <hr> 
-             </nav>
+        </nav>
+        
         </header>
+        <hr>
         <!--content-->
         <main>
         <!--section about -->
             <section id="about">
+                
                 <h1>À propos de moi</h1>
-                <img src="./assets/1.jpg"  alt="logo" width="500px"> 
+            <div class="profile">
+                <div class="profile-img">
+                <img src="./assets/1.jpg"  alt="logo" > 
+                </div>
+                <div class="descreption">
                 <p>
                 Bonjour ! Je m'appelle <span>Ilyes Moussa </span> 23 ans , jeune développeur web passionné .  
                 Je suis spécialisé dans la création de sites modernes, réactifs et performants avec HTML, CSS, JavaScript, et des frameworks comme React , MongoDB  et Node.Js
@@ -36,53 +53,77 @@
               <p>
                 N'hésite pas à me contacter si tu veux collaborer sur un projet ou simplement discuter tech !
               </p>
+                </div>
+            </div>
                <hr>
             </section >
           <!--section work -->
             <section id="work">
+    <div class="work-menu">
             <h1>Work</h1>
-            <dl>
-                <dt>langages connus</dt>
-                <dd>HTML</dd>
-                <dd>CSS</dd>
-                <dd>PHP</dd>
-                <dd>C</dd>
-                <dd>C++<dd>
-                <dd>java</dd>
-            </dl>
-            <dl >
-                <dt>Projets</dt>
-                <dd>XO game</dd>
-                <dd>TO-DO-Liste</dd>
-                <dd>Compte bankaire</dd>
-            </dl>
+        <div class="liste">
+
+            <div class="liste-langages">
+                <dl>
+                    <dt>langages connus</dt>
+                        <dd>HTML</dd>
+                    <dd>CSS</dd>
+                    <dd>PHP</dd>
+                    <dd>C</dd>
+                    <dd>C++<dd>
+                    <dd>java</dd>
+                </dl>
+            </div>
+            
+            <div class="liste-prjects">       
+                <dl>
+                    <dt>Projets</dt>
+                    <dd>XO game</dd>
+                    <dd>TO-DO-Liste</dd>
+                    <dd>Compte bankaire</dd>
+                </dl>
+            </div>
+        </div>
+    </div>  
+
+        
             <hr>
             <!--section resume -->
             <section id="resume">
-                <h1>Resume</h1>
-                <h2>Certificats</h2>
-                <ul >
-                    <li>Introduction à la cybersécurité -> Cisco Networking Academy (2021)</li>
-                    <li>Microsoft -> (2023)</li>
-                    <li>Certificat en Python pour la data science (2024)</li>
-                    <li>Développement Web Full Stack -> OpenClassrooms (En cours )</li>
-                </ul>
-                <iframe width="500" height="396" src="https://www.youtube.com/embed/350_XyLj4-U" title="HOW TO AD AUTO PLAY VIDEO IN WEBSITE BACKGROUND -  USING HTML AND CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
-                <audio src="./assets/town-10169.mp3" controls></audio>
+               <div class="resume-part1"> 
+                 <h1>Resume</h1>
+                
+                    
+                    <div class="resume-part2">
+                        <div class="certif">
+                            <h2>Certificats</h2>
+                            <ul >
+                                <li>Introduction à la cybersécurité -> Cisco Networking Academy (2021)</li>
+                                <li>Microsoft -> (2023)</li>
+                                <li>Certificat en Python pour la data science (2024)</li>
+                                <li>Développement Web Full Stack -> OpenClassrooms (En cours )</li>
+                            </ul>
+                        </div>
+                        <div class="vedio-son">
+                            <iframe width="500" height="396" src="https://www.youtube.com/embed/350_XyLj4-U" title="HOW TO AD AUTO PLAY VIDEO IN WEBSITE BACKGROUND -  USING HTML AND CSS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                            <br>
+                            <audio src="./assets/town-10169.mp3" controls></audio>
+                        </div>
+                     </div>
+                </div>
             </section>
             <hr>
             <!--section contact -->
             <section id="contact">
-            
-                <h1>Contact : </h1> 
-                <p>Email : lasloussa.ilyes@gmail.com</p>
-                <p>Tel number : 92087048 </p>
-                <p><a href="https://www.facebook.com/ilyes.moussa.737">facebook</a></p>
-                <p><a href="https://www.linkedin.com/in/ilyes-moussa-607062320">Linkedine compte</a></p>
-                <p><a href="https://github.com/Ilyes45">Git compte</a></p>
+                <div class="part-contact">
+                    <h1>Contact : </h1> 
+                    <p>Email : lasloussa.ilyes@gmail.com</p>
+                    <p>Tel number : 92087048 </p>
+                    <p><a href="https://www.facebook.com/ilyes.moussa.737">facebook</a></p>
+                    <p><a href="https://www.linkedin.com/in/ilyes-moussa-607062320">Linkedine compte</a></p>
+                    <p><a href="https://github.com/Ilyes45">Git compte</a></p>
 
-
+                </div>
              </section>
         
         </main>
@@ -107,7 +148,8 @@
             </table>
             <button>Envoyer</button>
             </form>
+            <a href="#TopOFThePage">Let's go up top</a>
         </footer> 
-        <a href="#TopOFThePage">Let's go up top</a>
+        
 </body>
 </html>
